@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>VentProject</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+
+  <!--
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  -->
+
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__logo">
+        <img class="header__logo-pic" src="img/logo.png" width="153" height="76" alt="Логотип">
+      </div>
+      <button class="header__burger burger">
+        <span class="burger__line burger__line--1"></span>
+        <span class="burger__line burger__line--2"></span>
+        <span class="burger__line burger__line--3"></span>
+        <span class="burger__line burger__line--4"></span>
+      </button>
+      <ul class="header__menu menu">
+        <li>
+          <a href="#services">Услуги</a>
+        </li>
+        <li>
+          <a href="#steps">Этапы</a>
+        </li>
+        <li>
+          <a href="#projects">Наши проекты</a>
+        </li>
+        <li>
+          <a href="#callback">Контакты</a>
+        </li>
+      </ul>
+      <div class="header__right">
+        <ul class="header__messengers messengers">
+          <li class="messengers__item">
+            <a class="messengers__link" href="#">
+              <img class="messengers__icon" src="img/telegram.png" width="40" height="40" alt="Telegram">
+            </a>
+          </li>
+          <li class="messengers__item">
+            <a class="messengers__link" href="#">
+              <img class="messengers__icon" src="img/whatsapp.png" width="40" height="40" alt="Whatsapp">
+            </a>
+          </li>
+        </ul>
+        <div class="header__contacts">
+          <p class="header__contacts-title">Нужна консультация?</p>
+          <a class="header__contacts-link header__phone" href="tel:+7(911)782-51-67">+7(911)782-51-67</a>
+          <a class="header__contacts-link header__email" href="mailto:zakaz@ventproekt.su">zakaz@ventproekt.su</a>
+          <button class="header__order button button--white cta-button">Заказать звонок</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="first">
+    <div class="first__container container">
+      <h2 class="first__title">
+        Профессиональный монтаж<br class="first__title-br">
+        систем вентиляции и кондиционирования
+      </h2>
+      <p class="first__offer">С гарантией <span class="first__offer--withbg">3 года</span></p>
+      <div class="first__order order">
+        <p class="order__free">
+          Закажите <span class="order__free--green">бесплатный</span>
+        </p>
+        <h2 class="order__title">
+          выезд инженера<br>
+          или расчёт стоимости
+        </h2>
+        <p class="order__offer">
+          Оставьте свои контакты и в течение <span class="order__offer--green">5 минут</span> с Вами свяжется специалист для уточнения деталей
+        </p>
+        <div class="order__form">
+          <form>
+            <input type="tel" placeholder="Введите номер телефона" value="">
+            <input type="email" placeholder="Или оставьте Ваш E-mail" value="">
+            <label class="order__submit">
+              <input type="submit" value="Заказать расчет">
+              (это бесплатно)
+            </label>
+          </form>
+        </div>
+        <p class="order__label">
+          Заполнение заявки Вас ни к чему не обязывает! Вы сможете получить предварительный расчёт стоимости работ и материалов
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="free container">
+    <h2 class="free__title title">Делаем <span class="title--blue">Бесплатно</span></h2>
+    <ul class="free__list">
+      <li class="free__item">
+        <div class="free__icon-container">
+          <img class="free__icon" src="img/telephone.png" width="65" height="61" alt="Консультация инженера">
+        </div>
+        <h3 class="free__name">Консультация инженера</h3>
+      </li>
+      <li class="free__item">
+        <div class="free__icon-container">
+          <img class="free__icon" src="img/calculator.png" width="61" height="61" alt="Предварительный расчет">
+        </div>
+        <h3 class="free__name">Предварительный расчет</h3>
+      </li>
+      <li class="free__item">
+        <div class="free__icon-container">
+          <img class="free__icon" src="img/measuring-tape.png" width="71" height="40" alt="Выезд инженера на объект">
+        </div>
+        <h3 class="free__name">Выезд инженера на объект</h3>
+      </li>
+    </ul>
+  </section>
+
+  <section class="services container" id="services">
+    <h2 class="services__title title">
+      <span class="title--blue">проектирование</span> и монтаж систем вентиляции
+      и кондиционирования
+    </h2>
+
+    <ul class="services__list">
+
+      <li class="services__card card">
+        <div class="card__front" style="background-image: url('img/services-1.jpg')">
+          <div class="card__inner">
+            <h3 class="card__name">Вентиляция в квартирах</h3>
+          </div>
+        </div>
+        <div class="card__back">
+          <div class="card__inner">
+            <p class="card__name">Вентиляция в квартирах</p>
+            <p class="card__desc">
+              Поможем настроить регулярный поток свежего воздуха вашей квартиры
+            </p>
+            <button class="card__button button button--white cta-button">Оформить заявку</button>
+          </div>
+        </div>
+      </li>
+
+      <li class="services__card card">
+        <div class="card__front" style="background-image: url('img/services-2.jpg')">
+          <div class="card__inner">
+            <h3 class="card__name">Вентиляция в домах</h3>
+          </div>
+        </div>
+        <div class="card__back">
+          <div class="card__inner">
+            <p class="card__name">Вентиляция в домах</p>
+            <p class="card__desc">
+              Составим индивидуальный проект вентиляционной системы с учётом особенностей вашего дома
+            </p>
+            <button class="card__button button button--white cta-button">Оформить заявку</button>
+          </div>
+        </div>
+      </li>
+
+      <li class="services__card card">
+        <div class="card__front" style="background-image: url('img/services-3.jpg')">
+          <div class="card__inner">
+            <h3 class="card__name">Вентиляция для промышленных помещений</h3>
+          </div>
+        </div>
+        <div class="card__back">
+          <div class="card__inner">
+            <p class="card__name">Вентиляция для промышленных помещений</p>
+            <p class="card__desc">
+              Создадим необходимый микроклимат промышленного помещения
+            </p>
+            <button class="card__button button button--white cta-button">Оформить заявку</buttobutton>
+          </div>
+        </div>
+      </li>
+
+      <li class="services__card card">
+        <div class="card__front" style="background-image: url('img/services-4.jpg')">
+          <div class="card__inner">
+            <h3 class="card__name">Вентиляция в офисах</h3>
+          </div>
+        </div>
+        <div class="card__back">
+          <div class="card__inner">
+            <p class="card__name">Вентиляция в офисах</p>
+            <p class="card__desc">
+              Обеспечим достаточным количеством кислорода каждого сотрудника вашего офиса
+            </p>
+            <button class="card__button button button--white cta-button">Оформить заявку</button>
+          </div>
+        </div>
+      </li>
+
+      <li class="services__card card">
+        <div class="card__front" style="background-image: url('img/services-5.jpg')">
+          <div class="card__inner">
+            <h3 class="card__name">Вентиляция в торговых центрах</h3>
+          </div>
+        </div>
+        <div class="card__back">
+          <div class="card__inner">
+            <p class="card__name">Вентиляция в торговых центрах</p>
+            <p class="card__desc">
+              Разработаем уникальный проект для крупного торгового центра с учётом всех норм гос. инстанций
+            </p>
+            <button class="card__button button button--white cta-button">Оформить заявку</button>
+          </div>
+        </div>
+      </li>
+
+      <li class="services__card card">
+        <div class="card__front" style="background-image: url('img/services-6.jpg')">
+          <div class="card__inner">
+            <h3 class="card__name">Вентиляция в кафе и ресторанах</h3>
+          </div>
+        </div>
+        <div class="card__back">
+          <div class="card__inner">
+            <p class="card__name">Вентиляция в кафе и ресторанах</p>
+            <p class="card__desc">
+              Обеспечим помещение вашего кафе или ресторана бесперебойной циркуляцией воздуха и полноценной вытяжкой
+            </p>
+            <button class="card__button button button--white cta-button">Оформить заявку</button>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+  </section>
+
+  <section class="steps" id="steps">
+    <div class="steps__container container">
+      <h2 class="steps__title title title--white">
+        Этапы производства <span class="title--green">работ</span>
+      </h2>
+      <ul class="steps__list">
+        <li class="steps__item steps__item--left steps__item--2">
+          <h3 class="steps__name">
+            Второй шаг:<br>
+            <span class="steps__name-color">Выезд инженера</span> на объект
+          </h3>
+          <p class="steps__desc">
+            Наш специалист произведёт необходимые замеры и составит техническое задание
+          </p>
+        </li>
+        <li class="steps__item steps__item--right steps__item--1">
+          <h3 class="steps__name">
+            Первый шаг:<br>
+            <span class="steps__name-color">Оставьте заявку</span> на сайте
+          </h3>
+          <p class="steps__desc">
+            Заполните форму обратной связи или свяжитесь с нами любым удобным для Вас способом
+          </p>
+        </li>
+        <li class="steps__item steps__item--left steps__item--4">
+          <h3 class="steps__name">
+            Четвёртый шаг:<br>
+            <span class="steps__name-color">Проектирование</span> системы
+          </h3>
+          <p class="steps__desc">
+            Применение технических решений, согласованных на допроектном этапе с учётом рекомендуемого оборудования
+          </p>
+        </li>
+        <li class="steps__item steps__item--right steps__item--3">
+          <h3 class="steps__name">
+            Третий шаг:<br>
+            <span class="steps__name-color">Подбираем</span> оборудование
+          </h3>
+          <p class="steps__desc">
+            На основе полученных вводных данных подбираем наиболее оптимальное для вашего проекта оборудование
+          </p>
+        </li>
+        <li class="steps__item steps__item--left steps__item--6">
+          <h3 class="steps__name">
+            Шестой шаг:<br>
+            <span class="steps__name-color">Ввод</span> в эксплуатацию
+          </h3>
+          <p class="steps__desc">
+            Запуск, передача исполнительной документации по объекту, подписание необходимых актов
+          </p>
+        </li>
+        <li class="steps__item steps__item--right steps__item--5">
+          <h3 class="steps__name">
+            Пятый шаг:<br>
+            <span class="steps__name-color">Монтажные </span>работы
+          </h3>
+          <p class="steps__desc">
+            Закупка и поставка оборудования, монтажные и высотные работы по проекту, пусконаладочные работы
+          </p>
+        </li>
+      </ul>
+      <button class="button button--white cta-button">Оформить заявку</button>
+    </div>
+  </section>
+
+  <section class="projects container" id="projects">
+    <h2 class="projects__title title">
+      <span class="title--blue">Наши</span> проекты
+    </h2>
+    <ul class="projects__list">
+      <li class="projects__item">
+        <div class="projects__slider owl-carousel owl-theme" id="projects__slider">
+          <img class="projects__img" src="img/projects-1.jpg" width="670" height="430" alt="">
+          <img class="projects__img" src="img/projects-2.jpg" width="670" height="430" alt="">
+          <img class="projects__img" src="img/projects-3.jpg" width="670" height="430" alt="">
+          <img class="projects__img" src="img/projects-4.jpg" width="670" height="430" alt="">
+        </div>
+        <div class="projects__right">
+          <h3 class="projects__name">
+            Распределительный центр Ашан,<br class="projects__br">
+            А Плюс Парк Санкт-Петербург-1<br class="projects__br">
+            24 800 м2
+          </h3>
+          <p class="projects__desc">
+            Проектирование, монтаж и послегарантийное обслуживание систем вентиляции и кондиционирования помещений складского комплекса площадью 24800 м2
+          </p>
+        </div>
+      </li>
+      <li class="projects__item projects__item--reverse">
+        <div class="projects__slider owl-carousel owl-theme">
+          <img class="projects__img" src="img/projects-2.jpg" width="670" height="430" alt="">
+          <img class="projects__img" src="img/projects-1.jpg" width="670" height="430" alt="">
+          <img class="projects__img" src="img/projects-3.jpg" width="670" height="430" alt="">
+          <img class="projects__img" src="img/projects-4.jpg" width="670" height="430" alt="">
+        </div>
+        <div class="projects__right">
+          <h3 class="projects__name">
+            Музей изобразительного и<br class="projects__br">
+            декоративно-прикладного искусства<br class="projects__br">
+            «Государственный Эрмитаж»
+          </h3>
+          <p class="projects__desc">
+            Проектирование, монтаж и обслуживание систем поддержания микроклимата помещений и хранилища одного из наиболее значительных культурно-исторических музеев Санкт-Петербурга и мира
+          </p>
+        </div>
+      </li>
+      <li class="projects__item">
+        <div class="projects__slider owl-carousel owl-theme">
+          <img class="projects__img" src="img/projects-3.jpg" width="670" height="430" alt="">
+          <img class="projects__img" src="img/projects-1.jpg" width="670" height="430" alt="">
+          <img class="projects__img" src="img/projects-2.jpg" width="670" height="430" alt="">
+          <img class="projects__img" src="img/projects-4.jpg" width="670" height="430" alt="">
+        </div>
+        <div class="projects__right">
+          <h3 class="projects__name">
+            Акционерное общество<br class="projects__br">
+            «Газпром газораспределение<br class="projects__br">
+            Ленинградская область»
+          </h3>
+          <p class="projects__desc">
+            Проектирование и монтаж мультизональной VRF системы Mitsubishi кондиционирования 5 этажного здания компании “Леноблгаз”
+          </p>
+        </div>
+      </li>
+      <li class="projects__item projects__item--reverse">
+        <div class="projects__slider owl-carousel owl-theme">
+          <img class="projects__img" src="img/projects-4.jpg" width="670" height="430" alt="">
+          <img class="projects__img" src="img/projects-2.jpg" width="670" height="430" alt="">
+          <img class="projects__img" src="img/projects-1.jpg" width="670" height="430" alt="">
+          <img class="projects__img" src="img/projects-3.jpg" width="670" height="430" alt="">
+        </div>
+        <div class="projects__right">
+          <h3 class="projects__name">
+            Ресторан GORN<br class="projects__br">
+            Большой просп. Васильевского<br class="projects__br">
+            острова, 68, Санкт-Петербург
+          </h3>
+          <p class="projects__desc">
+            Обслуживание, монтаж и пусконаладочные работы систем вентиляции и кондиционирования ресторана
+          </p>
+        </div>
+      </li>
+    </ul>
+    <button class="projects__button button button--blue cta-button">Рассчитать стоимость работ на вашем объекте</button>
+  </section>
+
+  <section class="doc">
+    <div class="doc__container container">
+      <h2 class="title doc__title title--white">
+        Состав готовой <span class="title--green">проектной документации</span>
+      </h2>
+      <p class="doc__offer">
+        Наши специалисты в кратчайшие сроки разработают персональный проект, который будет полностью удовлетворять потребностям. <span class="dov__offer--green">Результат проектирования</span> - готовый проект, который включает в себя следующие документы:
+      </p>
+      <div class="doc__main">
+        <div class="doc__left">
+          <button class="button button--green cta-button">Заказать проект</button>
+        </div>
+        <ul class="doc__list">
+          <li class="doc__item">Обложка проекта и титульный лист; </li>
+          <li class="doc__item">Необходимые лицензии и сертификаты на проведение проектных и монтажных работ; </li>
+          <li class="doc__item">Техническое задание на создание вентиляционной системы; </li>
+          <li class="doc__item">Пояснительная записка: </li>
+          <li class="doc__item">Основные технические решения для вентиляционных систем: </li>
+          <li class="doc__item">Расход тепла и установочная электрическая мощность вентиляционного оборудования; </li>
+          <li class="doc__item">Характеристики вентиляционной системы (габариты, энергопотребление и т.п.); </li>
+          <li class="doc__item">Таблица расчётов воздухообмена в помещениях; </li>
+          <li class="doc__item">Расчёт основного оборудования для вентиляции при помощи программных продуктов производителя оборудования; </li>
+          <li class="doc__item">Схема расположения основного оборудования вентиляции в венткамерах; </li>
+          <li class="doc__item">Схема размещения воздухораспределителей и пультов; </li>
+          <li class="doc__item">Схема расположения воздуховодов, вентиляционных магистралей и прочих элементов; </li>
+          <li class="doc__item">Спецификация оборудования вентиляции; </li>
+          <li class="doc__item">Аксонометрические схемы системы вентиляции. </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="callback" id="callback">
+    <div class="callback__container container">
+      <h2 class="callback__title title title--green">Нужен совет?</h2>
+      <p class="callback__offer">Наш специалист ответит на все ваши вопросы</p>
+      <div class="callback__block">
+        <p class="callback__form-title">
+          Заполните форму обратной связи
+        </p>
+        <p class="callback__form-offer">
+          В течение 30 минут с момента отправки формы
+          Вы получите ответы на все ваши вопросы
+        </p>
+        <div class="callback__form form">
+          <form>
+            <label>
+              <input type="text" value="" required>
+              <span class="span-label">Введите ваше имя</span>
+            </label>
+            <label>
+              <input type="tel" value="" required>
+              <span class="span-label">Введите номер телефона</span>
+            </label>
+            <label>
+              <input type="email" value="">
+              <span class="span-label">Или оставьте Ваш E-mail</span>
+            </label>
+            <label>Ваш вопрос</label>
+            <textarea></textarea>
+            <input type="submit" value="Отправить">
+          </form>
+          <p class="callback__success">
+            Нажимая на кнопку, Вы даёте согласие<br>
+            на обработку и хранение персональных данных
+          </p>
+        </div>
+        <div class="callback__gears gears">
+          <div class="gears__spin-one gears__item gears__item--1"></div>
+          <div class="gears__spin-two gears__item gears__item--2"></div>
+          <div class="gears__spin-one gears__item gears__item--3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="customers">
+    <h2 class="customers__title title">
+      Наши <span class="title--blue">клиенты</span>
+    </h2>
+    <div class="customers__slider owl-carousel owl-theme">
+      <div class="customers__item">
+        <img src="img/customers-1.png" width="270" height="88">
+      </div>
+      <div class="customers__item">
+        <img src="img/customers-2.png" width="85" height="109">
+      </div>
+      <div class="customers__item">
+        <img src="img/customers-3.png" width="230" height="111">
+      </div>
+      <div class="customers__item">
+        <img src="img/customers-4.png" width="111" height="137">
+      </div>
+      <div class="customers__item">
+        <img src="img/customers-5.png" width="270" height="39">
+      </div>
+      <div class="customers__item">
+        <img src="img/customers-6.png" width="121" height="107">
+      </div>
+      <div class="customers__item">
+        <img src="img/customers-7.png" width="107" height="107">
+      </div>
+      <div class="customers__item">
+        <img src="img/customers-8.png" width="154" height="107">
+      </div>
+      <div class="customers__item">
+        <img src="img/customers-9.png" width="221" height="83">
+      </div>
+      <div class="customers__item">
+        <img src="img/customers-10.png" width="190" height="34">
+      </div>
+      <div class="customers__item">
+        <img src="img/customers-12.png" width="109" height="109">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__top">
+        <div class="footer__logo">
+          <img class="footer__logo-pic" src="img/logo.png" width="225" height="111" alt="Логотип">
+        </div>
+        <p class="footer__address footer__address--mobile">
+          <span class="footer__address--blue">г. Санкт-Петербург,</span> Невский пр-т, д.1, оф.77
+        </p>
+        <ul class="footer__menu menu">
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#steps">Этапы</a></li>
+          <li><a href="#projects">Наши проекты</a></li>
+        </ul>
+        <div class="footer__right">
+          <ul class="footer__messengers messengers messengers--column">
+            <li class="messengers__item">
+              <a class="messengers__link" href="#">
+                <img class="messengers__icon" src="img/telegram.png" width="40" height="40" alt="Telegram">
+              </a>
+            </li>
+            <li class="messengers__item">
+              <a class="messengers__link" href="#">
+                <img class="messengers__icon" src="img/whatsapp.png" width="40" height="40" alt="Whatsapp">
+              </a>
+            </li>
+          </ul>
+          <div class="footer__contacts">
+            <a class="footer__contacts-link footer__phone" href="tel:+7(911)782-51-67">+7(911)782-51-67</a>
+            <a class="footer__contacts-link footer__email" href="mailto:zakaz@ventproekt.su">zakaz@ventproekt.su</a>
+            <button class="footer__button button button--white cta-button">Заказать звонок</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__address footer__address--desktop">
+          <span class="footer__address--blue">г. Санкт-Петербург,</span> Невский пр-т, д.1, оф.77
+        </p>
+        <p class="footer__copyright">
+          ©2020 sitename.com Все права защищены.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div style="display: none;">
+    <div class="modal b-modal" id="modal">
+      <div class="modal__container container">
+        <h2 class="modal__title">Отправьте заявку на <span class="modal__title--blue">консультацию</span></h2>
+        <p class="modal__offer">
+          Оставьте свои контакты и в течение <span class="modal__offer--green">5 минут</span> с Вами свяжется специалист для уточнения деталей
+        </p>
+        <div class="modal__form">
+          <form>
+            <label>
+              <input type="text" value="" required>
+              <span>Ваше имя</span>
+            </label>
+            <label>
+              <input type="tel" value="" required>
+              <span>Контактный номер</span>
+            </label>
+            <label>
+              <input type="email" value="">
+              <span>Email</span>
+            </label>
+            <input type="submit" value="Отправить">
+          </form>
+        </div>
+        <p class="modal__protected">
+          Ваши данные под надёжной защитой
+        </p>
+        <div class="modal__right">
+          <div class="modal__gears gears gears--blue">
+            <div class="gears__spin-one gears__item gears__item--1"></div>
+            <div class="gears__spin-two gears__item gears__item--2"></div>
+            <div class="gears__spin-one gears__item gears__item--3"></div>
+          </div>
+          <img class="modal__right-logo" src="img/modal-logo.png" width="532" height="71" alt="Логотип">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+  <script src="js/main.js"></script>
+
+  </body>
+</html>

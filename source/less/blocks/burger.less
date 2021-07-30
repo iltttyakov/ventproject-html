@@ -1,0 +1,43 @@
+.burger__line {
+  display: block;
+  width: 55px;
+  height: 8px;
+  margin-bottom: 4px;
+
+  border-radius: 1px;
+  background-color: #4fe55d;
+
+  transition: all 0.1s ease-in-out;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  &--open {
+    .burger__line {
+      &--1 {
+        width: 39px;
+      }
+
+      &--2 {
+        width: 51px;
+      }
+
+      &--3 {
+        width: 43px;
+      }
+    }
+  }
+}

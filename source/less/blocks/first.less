@@ -1,0 +1,119 @@
+
+.first,
+.first__container {
+  background-repeat: no-repeat
+}
+
+.first {
+  margin-bottom: 93px;
+  padding-top: 33px;
+  background-color: #042b54;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/bg-first.jpg)
+}
+
+.first__container {
+  background-size: 62%;
+  background-position: 80% bottom;
+  background-image: url(../img/man-first.png)
+}
+
+.first__offer,
+.first__title {
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-shadow: 0 4px 4px rgba(0, 3, 6, .4)
+}
+
+.first__title {
+  font-family: "Kelson Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+  font-size: 46px;
+  line-height: 60px;
+  color: #57e24f
+}
+
+.first__offer {
+  margin: 0 0 15px;
+  font-size: 40px;
+  line-height: 54px;
+  color: #fafafa
+}
+
+.first__offer--withbg {
+  position: relative;
+  z-index: 1
+}
+
+.first__offer--withbg::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -10px;
+  top: 0;
+  width: 118%;
+  height: 49px;
+  background-color: #f6921e;
+  border-top: 4px solid #fafafa
+}
+
+.first__order {
+  width: 316px;
+  margin-left: 47px;
+  background-color: rgba(2, 29, 56, .8);
+  border: 1px solid #1c6ee8
+}
+
+@media (max-width: 1170px) {
+  .first__title {
+    max-width: 610px;
+
+    font-size: 40px;
+    line-height: 43px;
+  }
+
+  .first__title-br {
+    display: none;
+  }
+}
+
+@media (max-width: 764px) {
+  .first {
+    padding-top: 47px;
+    margin-bottom: 91px;
+  }
+
+  .first__container {
+    padding: 0;
+  }
+
+  .first__title {
+    padding: 0 12px;
+    margin-bottom: 11px;
+
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .first__offer {
+    padding: 0 12px;
+    margin-bottom: 17px;
+
+    font-size: 24px;
+    line-height: 28px;
+
+    &--withbg::before {
+      left: -2px;
+      top: 0;
+      width: 109%;
+      height: 29px;
+    }
+  }
+
+  .first__order {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}

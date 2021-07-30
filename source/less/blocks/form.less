@@ -1,0 +1,123 @@
+.form {
+  form {
+    width: 100%;
+  }
+
+  label {
+    position: relative;
+
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+
+    font-size: 18px;
+    line-height: 26px;
+    color: #fafafa;
+  }
+
+  textarea {
+    width: 100%;
+    height: 80px;
+
+    padding: 5px;
+
+    font-size: 18px;
+    line-height: 26px;
+    color: #fafafa;
+
+    outline: none;
+    border: none;
+    border-radius: 0;
+    background-color: rgba(250, 250, 250, 0.2);
+  }
+
+  span.span-label {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+
+    font-size: 18px;
+    line-height: 26px;
+    color: #fafafa;
+    letter-spacing: 0.06em;
+
+    transition: all 0.2s ease-in-out;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 23px;
+
+    font-size: 18px;
+    line-height: 26px;
+    color: #fafafa;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #fafafa;
+    outline: none;
+
+    &:not([value=""]) {
+      + span.span-label  {
+        opacity: 0;
+      }
+    }
+
+    &:focus {
+      border-color:#FAFAFA;
+
+      + span.span-label  {
+        top: -15px;
+
+        font-size: 13px;
+        line-height: 14px;
+
+        opacity: 1;
+      }
+    }
+  }
+
+  input[type=submit] {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 56px;
+    padding: 14px 61px;
+    margin-top: 14px;
+    margin-bottom: 15px;
+
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #f6921e;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+
+    border: 1px solid #f6921e;
+    border-top: 3px solid #f6921e;
+    background: transparent;
+    cursor: pointer;
+
+    transition: all 0.1s ease;
+
+    &:hover,
+    &:focus {
+      color: #325dde;
+      background-color: #f6921e;
+      border-top-color: #fafafa;
+      box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .form {
+    textarea {
+      height: 123px;
+    }
+  }
+}
